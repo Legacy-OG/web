@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legacy - The OG Fortnite Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .banner {
+      position: relative;
+      border-radius: 9999px;
+      overflow: hidden;
+      margin-bottom: 22px;
+      backdrop-filter: blur(8px);
+    }
+
+    .banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(30, 138, 46, 0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    .banner-content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px 32px;
+    }
+
+    .title {
+      font-size: 6rem;
+      font-weight: 700;
+      color: #3498db;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      font-size: 1.875rem;
+      font-weight: 500;
+      margin-top: -2px;
+    }
+
+    .subtitle .bold {
+      font-weight: 700;
+    }
+
+    .download-section {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .download-button {
+      display: inline-block;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 16px 48px;
+      font-size: 1.25rem;
+      font-weight: 500;
+      cursor: pointer;
+      margin-bottom: 14px;
+      transition: background-color 0.2s;
+      text-decoration: none;
+    }
+
+    .download-button:hover {
+      background-color: #2980b9;
+    }
+
+    .discord-text {
+      font-size: 0.875rem;
+      font-style: italic;
+    }
+
+    .discord-link {
+      color: #5865F2;
+      text-decoration: none;
+    }
+
+    .discord-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="banner">
+      <div class="banner-content">
+        <span style="font-size: 1.25rem;">📢</span>
+        <span>V1 is now public!</span>
+      </div>
+    </div>
+    <h1 class="title">Legacy</h1>
+    
+    <h2 class="subtitle">
+      <span class="bold">The</span> OG Fortnite Experience
+    </h2>
+    
+    <div class="download-section">
+      <a href="#download" class="download-button">
+        Download
+      </a>
+      
+      <div class="discord-text">
+        Join our <a href="#discord" class="discord-link">Discord</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
